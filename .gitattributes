@@ -1,2 +1,2 @@
+*.ipynb linguist-language=Python
 *.sql linguist-detectable=true
-*.ipynb linguist-vendored=true
