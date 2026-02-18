@@ -12,8 +12,8 @@ GROUP BY koi_disposition
 
 SELECT kepler_name,
 	koi_teq AS GEZEGENLERIN_SICAKLIGI_K,
-	koi_prad AS Gezegen_Yarýçapý_Dunya,
-	koi_period AS Yorunge_Suresý_Gun
+	koi_prad AS Gezegen_YarÃ½Ã§apÃ½_Dunya,
+	koi_period AS Yorunge_SuresÃ½_Gun
 FROM cumulative
 WHERE koi_disposition = 'CONFIRMED'
 	AND koi_teq BETWEEN 180 AND 320
@@ -23,10 +23,10 @@ ORDER BY koi_teq
 
 
 SELECT 
-	MIN(koi_teq) AS En_Dusuk_Sýcaklýk,
-	MAX(koi_teq) AS En_Yuksek_Sýcaklýk,
+	MIN(koi_teq) AS En_Dusuk_SÃ½caklÃ½k,
+	MAX(koi_teq) AS En_Yuksek_SÃ½caklÃ½k,
 	MIN(koi_prad) AS En_Kucuk_Yaricap,
-	MAX(koi_prad) AS En_Yuksek_yarýcap
+	MAX(koi_prad) AS En_Yuksek_yarÃ½cap
 FROM cumulative
 WHERE koi_disposition ='CONFIRMED'
 
